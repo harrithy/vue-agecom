@@ -12,6 +12,8 @@
                             <li>{{ week }}</li>
                             <li>{{ paihang }}</li>
                             <li>{{ download }}</li>
+                            <!-- //使用v-for来完成导航栏内容的动态生成 -->
+                            <!-- <li v-for="(item,index) in daohang" :key="index">{{ item }}</li> -->
                         </ul>
                 </div>
                 <div class="boxer3">
@@ -35,6 +37,7 @@ export default {
         let week = "一周更新";
         let paihang = "排行榜";
         let download = "客户端下载";
+        //使用v-for来完成导航栏内容的动态生成
         let daohang = {
             shouye:"首页",
             menu :"目录",
@@ -50,7 +53,8 @@ export default {
             menu,
             week,
             paihang,
-            download
+            download,
+            daohang
         }
 
     }
